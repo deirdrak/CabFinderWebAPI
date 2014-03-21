@@ -1,0 +1,5 @@
+C:\Users\Wendy\documents\visual studio 2012\Projects\CabFinderWebAPI\CabFinderDomain\bin\Debug\CabFinderDomain.dll
+C:\Users\Wendy\documents\visual studio 2012\Projects\CabFinderWebAPI\CabFinderDomain\bin\Debug\CabFinderDomain.pdb
+C:\Users\Wendy\documents\visual studio 2012\Projects\CabFinderWebAPI\CabFinderDomain\obj\Debug\CabFinderDomain.dll
+C:\Users\Wendy\documents\visual studio 2012\Projects\CabFinderWebAPI\CabFinderDomain\obj\Debug\CabFinderDomain.pdb
+C:\Users\Wendy\documents\visual studio 2012\Projects\CabFinderWebAPI\CabFinderDomain\obj\Debug\CabFinderDomain.csprojResolveAssemblyReference.cache
