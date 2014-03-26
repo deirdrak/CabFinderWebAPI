@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Http;
 using CabFinderDomain;
 using CabFinderDomain.Entities;
+using NHibernate.Criterion;
 
 namespace CabFinderWebAPI.Controllers
 {
@@ -33,7 +34,7 @@ namespace CabFinderWebAPI.Controllers
             var user = _repository.First<User>(x => x.number1 == phoneNumber);
             user.latitude = latitude;
             user.longitude = longitude;
-            user.updated_at = DateTime.Now;
+            user.updated_at = (DateTime.Now.ToUniversalTime()).AddHours(-6);
 
             _repository.Update(user);
         }
