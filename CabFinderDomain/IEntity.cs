@@ -8,7 +8,7 @@ namespace CabFinderDomain
 {
     public interface IEntity
     {
-        long id { get; set; }
+        int id { get; set; }
         //bool Activo { get; set; }
     }
 }

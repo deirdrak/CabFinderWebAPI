@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="PostgreSQL-Web.config Connection String" description="PostgreSQL Connection String used in web.config by the application to access the database." defaultValue="Database=dd45t1jac1onh3; Server=ec2-23-23-177-33.compute-1.amazonaws.com; Port=5432; Protocol=3;          Userid=ropedsmjnrnbvp; Password=-qET4vXnJw32raSu13ijvFo07O; SSL=true;SslMode=Require;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Wendy\\documents\\visual\ studio\ 2012\\Projects\\CabFinderWebAPI\\CabFinderWebAPI\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PostgreSQL']/@connectionString" />
-  </parameter>
-</parameters>

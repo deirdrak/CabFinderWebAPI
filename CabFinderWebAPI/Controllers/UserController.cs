@@ -21,7 +21,7 @@ namespace CabFinderWebAPI.Controllers
         [HttpGet]
         public bool DriverAuthentication(int phoneNumber,string password)
         {
-            var user=_repository.First<User>(x=>x.number1==phoneNumber && x.password_hash==password);
+            var user=_repository.First<t_users>(x=>x.phonenumber==phoneNumber && x.password==password);
 
             if (user != null)
                 return true;
@@ -31,7 +31,7 @@ namespace CabFinderWebAPI.Controllers
         [HttpPost]
         public void UpdateDriversLocation(int phoneNumber, double latitude, double longitude)
         {
-            var user = _repository.First<User>(x => x.number1 == phoneNumber);
+            var user = _repository.First<t_users>(x => x.phonenumber == phoneNumber);
             user.latitude = latitude;
             user.longitude = longitude;
             user.updated_at = (DateTime.Now.ToUniversalTime()).AddHours(-6);
@@ -40,9 +40,9 @@ namespace CabFinderWebAPI.Controllers
         }
 
         [HttpGet]
-        public List<User> GetAllActiveAvailableUsers()
+        public List<t_users> GetAllActiveAvailableUsers()
         {
-            return _repository.Query<User>(x=>x.active && x.available).ToList();
+            return _repository.Query<t_users>(x => x.active && x.available).ToList();
         }
     }
 }
